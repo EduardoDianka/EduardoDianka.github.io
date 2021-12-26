@@ -1,0 +1,170 @@
+.enca{
+    position: absolute;
+    width: 80%;
+    z-index: 90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: 3%;
+    font-size: 1.2em;
+    transition: .7s ease-in;
+    text-shadow: 0px 0px 10px #fff;
+}
+
+
+.audio{
+    position: absolute;
+    left: 8%;
+    top: 5%;
+    font-size: 1.5em;
+    color: rgb(113, 0, 219);
+    text-shadow: 0px 0px 15px #fff;
+    z-index: 120;
+}
+.audio div{
+    display: inline;
+    
+}
+.audio div:hover{
+    cursor: pointer;
+}
+.play, .pau{
+    transition: .3s ease-in;
+}
+
+.p__deprincipal{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+    width: 100%;
+}
+.espacio{
+    height: 1.5em;
+}
+.cons{
+    transition: .5s ease-in-out;
+    transform: scale(0);
+    z-index: 1000;
+
+    height: 100%;
+    width: 100%;
+}
+
+.cerrar{
+    transition: .3s ease-in-out;
+    position: absolute;
+    left: 8%;
+    top: 5%;
+    z-index: 20000;
+    font-size: 2em;
+}
+.cerrar:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 10px #fff;
+}
+.articulo{
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.secio{
+    transition: .5s ease-in-out;
+    transform: scale(0);
+
+
+    position: absolute;
+    padding: 1.5em .5em;
+    height: 95%;
+    width: 90%;
+    background: #00aae3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    overflow: auto;
+    
+    box-shadow: 0px 0px 10px 5px #fff;
+}
+.secio__se{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cebezera{
+    margin-top: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.cebezera h2{
+    
+
+}
+
+.parrafo p{
+
+}
+.flex_imagen{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+.imagen{
+    max-width: 380px;
+    width: 95%;
+    padding: 1em;
+    margin: auto;
+}
+
+.img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px #fff;
+}
+
+
+
+
+/*
+
+    activo
+
+*/
+
+.consactivo{
+    filter: blur(0px);
+    transform: scale(1);
+    transition: .5s ease-in-out;
+}
+.secioactivo{
+    position: relative;
+    transform: scale(1);
+    transition: .5s ease-in-out;
+    
+}
+
+
+@media screen and (min-width: 600px){
+    .imagen{
+        
+    }
+}

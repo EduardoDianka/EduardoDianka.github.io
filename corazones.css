@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #77f;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.principal{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 95vh;
+}
+.corazones{
+    
+}
+.corazones__pri__12{
+    font-size: 3.7em;
+    color: #f22;
+    text-shadow: 0px 0px 10px #ccc;
+}
+.prin__cora{
+    transition: 3s ease-in-out;
+
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+
+}
+.prin__cora:hover{
+    cursor: pointer;
+}
+.corazones__secun{
+
+}
+.palpitar{
+
+}
+.mover__cora{
+    transition: 8s ease-in-out;
+    text-shadow: 0px 0px 20px #fff;
+}
+.palpi__cora{
+
+
+    position: absolute;
+    font-size: 2.6em;
+    color: #f77;
+    text-shadow: 0px 0px 5px #fff;
+    animation: palpitar infinite ease-in-out 2s;
+}
+
+.rotar{
+
+}
+.rotar__cora{
+    position: absolute;
+    font-size: 2.4em;
+    color: #f77;
+    text-shadow: 0px 0px 5px #888;
+    animation: rotar infinite ease-in-out 3s;
+}
+.multi{
+
+}
+.multi__cora{
+    position: absolute;
+    font-size: 2.7em;
+    background: linear-gradient(30deg, #f88, #f8f,#88f);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+
+
+@keyframes palpitar {
+    0%{
+        transform: scale(.9);
+    }
+    20%{
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(.9);
+    }
+    60%{
+        transform: scale(1.05);
+    }
+    80%{
+        transform: scale(.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@keyframes rotar {
+    0%{
+
+        transform: rotate(10deg);
+    }
+    20%{
+        transform: rotate(-20deg);
+    }
+    40%{
+        transform: rotate(20deg);
+    }
+    60%{
+        transform: rotate(-20deg);
+    }
+    80%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
+}
+
+
